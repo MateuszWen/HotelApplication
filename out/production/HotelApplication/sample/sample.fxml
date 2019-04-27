@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="609.0" prefWidth="855.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="633.0" prefWidth="868.0">
+         <children>
+            <TableView fx:id="table" layoutX="22.0" layoutY="218.0" prefHeight="375.0" prefWidth="533.0">
+              <columns>
+                <TableColumn fx:id="col_name" prefWidth="88.0" text="Name" />
+                <TableColumn fx:id="col_surname" prefWidth="75.0" text="Surname" />
+                  <TableColumn fx:id="col_room" prefWidth="78.0" text="Room" />
+                  <TableColumn fx:id="col_checkin" prefWidth="72.0" text="Check In" />
+                  <TableColumn fx:id="col_checkout" prefWidth="85.0" text="Check out" />
+                  <TableColumn fx:id="col_reservationnumber" prefWidth="142.0" text="Reservation number" />
+              </columns>
+            </TableView>
+         </children></Pane>
+   </children>
+</GridPane>

@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sample/AddingGuests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sample/ReservationV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelApplication/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/HotelApplication/src/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HotelApplication/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HotelApplication/sample/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HotelApplication/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HotelApplication/sample/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HotelApplication/sample/Reservation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HotelApplication/sample/Reservation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HotelApplication/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HotelApplication/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
@@ -62,8 +67,7 @@
     <breakpoint_rules converted="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
@@ -73,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="272">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="74" column="102" selection-start-line="74" selection-start-column="102" selection-end-line="74" selection-end-column="102" />
+            <state relative-caret-position="217">
+              <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,59 +98,64 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="103" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/Reservation.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/AddingGuests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1432#1433#0" expanded="true" />
-                <element signature="e#1465#1466#0" expanded="true" />
-                <element signature="e#1516#1517#0" expanded="true" />
-                <element signature="e#1543#1544#0" expanded="true" />
-                <element signature="e#1580#1581#0" expanded="true" />
-                <element signature="e#1615#1616#0" expanded="true" />
-                <element signature="e#1645#1646#0" expanded="true" />
-                <element signature="e#1683#1684#0" expanded="true" />
-                <element signature="e#1738#1739#0" expanded="true" />
-                <element signature="e#1770#1771#0" expanded="true" />
-                <element signature="e#1820#1821#0" expanded="true" />
-                <element signature="e#1865#1866#0" expanded="true" />
-                <element signature="e#1904#1905#0" expanded="true" />
-                <element signature="e#1945#1946#0" expanded="true" />
-                <element signature="e#2003#2004#0" expanded="true" />
-                <element signature="e#2038#2039#0" expanded="true" />
-                <element signature="e#2094#2095#0" expanded="true" />
-                <element signature="e#2145#2146#0" expanded="true" />
-                <element signature="e#2183#2184#0" expanded="true" />
-                <element signature="e#2223#2224#0" expanded="true" />
-                <element signature="e#2280#2281#0" expanded="true" />
-                <element signature="e#2314#2315#0" expanded="true" />
-                <element signature="e#2368#2369#0" expanded="true" />
-                <element signature="e#2417#2418#0" expanded="true" />
-                <element signature="e#2456#2457#0" expanded="true" />
-                <element signature="e#2497#2498#0" expanded="true" />
-                <element signature="e#2555#2556#0" expanded="true" />
-                <element signature="e#2590#2591#0" expanded="true" />
-                <element signature="e#2646#2647#0" expanded="true" />
-                <element signature="e#2697#2698#0" expanded="true" />
-                <element signature="e#2738#2739#0" expanded="true" />
-                <element signature="e#2784#2785#0" expanded="true" />
-                <element signature="e#2848#2849#0" expanded="true" />
-                <element signature="e#2888#2889#0" expanded="true" />
-                <element signature="e#2951#2952#0" expanded="true" />
-                <element signature="e#3012#3013#0" expanded="true" />
+                <element signature="method#getSurnameAdding#0;class#AddingGuests#0" />
+                <element signature="method#getRoomNumber#0;class#AddingGuests#0" />
+                <element signature="method#getCheckInDate#0;class#AddingGuests#0" />
+                <element signature="method#getCheckOutDate#0;class#AddingGuests#0" />
+                <element signature="method#getNumberOfBeds#0;class#AddingGuests#0" />
+                <element signature="method#getReservationNumber#0;class#AddingGuests#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Reservation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3234#3235#0" expanded="true" />
+                <element signature="e#3280#3281#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/ReservationV2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2217#2218#0" expanded="true" />
+                <element signature="e#2295#2296#0" expanded="true" />
+                <element signature="e#2367#2368#0" expanded="true" />
+                <element signature="e#2440#2441#0" expanded="true" />
+                <element signature="e#2530#2531#0" expanded="true" />
+                <element signature="e#2626#2627#0" expanded="true" />
+                <element signature="e#2690#2691#0" expanded="true" />
+                <element signature="e#2767#2768#0" expanded="true" />
+                <element signature="e#2842#2843#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,9 +184,11 @@
         <option value="$PROJECT_DIR$/src/sample/Room.java" />
         <option value="$PROJECT_DIR$/src/Reservation.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/Reservation.java" />
+        <option value="$PROJECT_DIR$/src/sample/ReservationV2.java" />
+        <option value="$PROJECT_DIR$/src/sample/AddingGuests.java" />
       </list>
     </option>
   </component>
@@ -197,12 +208,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="HotelApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HotelApplication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HotelApplication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HotelApplication" type="462c0819:PsiDirectoryNode" />
               <item name="HotelApplication" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -220,7 +237,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,6 +253,8 @@
     <property name="dynamic.classpath" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -353,7 +371,7 @@
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1337953" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1359275" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.32995737" />
       <window_info id="Designer" order="3" />
@@ -459,27 +477,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="2547" selection-start-line="2547" selection-end-line="2547" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="74" column="102" selection-start-line="74" selection-start-column="102" selection-end-line="74" selection-end-column="102" />
+        <state relative-caret-position="272">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -487,55 +488,92 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="103" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
+        <state relative-caret-position="204">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-m.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-278" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first-f.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="926" column="58" selection-start-line="926" selection-start-column="58" selection-end-line="926" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="1768" column="22" selection-start-line="1768" selection-start-column="22" selection-end-line="1768" selection-end-column="22" />
+          <folding>
+            <element signature="e#71057#71058#0" expanded="true" />
+            <element signature="e#71104#71105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Reservation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1465#1466#0" expanded="true" />
-            <element signature="e#1516#1517#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-            <element signature="e#1580#1581#0" expanded="true" />
-            <element signature="e#1615#1616#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#1738#1739#0" expanded="true" />
-            <element signature="e#1770#1771#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1865#1866#0" expanded="true" />
-            <element signature="e#1904#1905#0" expanded="true" />
-            <element signature="e#1945#1946#0" expanded="true" />
-            <element signature="e#2003#2004#0" expanded="true" />
-            <element signature="e#2038#2039#0" expanded="true" />
-            <element signature="e#2094#2095#0" expanded="true" />
-            <element signature="e#2145#2146#0" expanded="true" />
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2223#2224#0" expanded="true" />
-            <element signature="e#2280#2281#0" expanded="true" />
-            <element signature="e#2314#2315#0" expanded="true" />
-            <element signature="e#2368#2369#0" expanded="true" />
-            <element signature="e#2417#2418#0" expanded="true" />
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="e#2497#2498#0" expanded="true" />
-            <element signature="e#2555#2556#0" expanded="true" />
-            <element signature="e#2590#2591#0" expanded="true" />
-            <element signature="e#2646#2647#0" expanded="true" />
-            <element signature="e#2697#2698#0" expanded="true" />
-            <element signature="e#2738#2739#0" expanded="true" />
-            <element signature="e#2784#2785#0" expanded="true" />
-            <element signature="e#2848#2849#0" expanded="true" />
-            <element signature="e#2888#2889#0" expanded="true" />
-            <element signature="e#2951#2952#0" expanded="true" />
-            <element signature="e#3012#3013#0" expanded="true" />
+            <element signature="e#3234#3235#0" expanded="true" />
+            <element signature="e#3280#3281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ReservationV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2295#2296#0" expanded="true" />
+            <element signature="e#2367#2368#0" expanded="true" />
+            <element signature="e#2440#2441#0" expanded="true" />
+            <element signature="e#2530#2531#0" expanded="true" />
+            <element signature="e#2626#2627#0" expanded="true" />
+            <element signature="e#2690#2691#0" expanded="true" />
+            <element signature="e#2767#2768#0" expanded="true" />
+            <element signature="e#2842#2843#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/AddingGuests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getSurnameAdding#0;class#AddingGuests#0" />
+            <element signature="method#getRoomNumber#0;class#AddingGuests#0" />
+            <element signature="method#getCheckInDate#0;class#AddingGuests#0" />
+            <element signature="method#getCheckOutDate#0;class#AddingGuests#0" />
+            <element signature="method#getNumberOfBeds#0;class#AddingGuests#0" />
+            <element signature="method#getReservationNumber#0;class#AddingGuests#0" />
           </folding>
         </state>
       </provider>

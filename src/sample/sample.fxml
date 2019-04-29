@@ -20,14 +20,17 @@
    <children>
       <Pane prefHeight="633.0" prefWidth="868.0">
          <children>
-            <TableView fx:id="table" layoutX="22.0" layoutY="68.0" prefHeight="525.0" prefWidth="581.0">
+            <TableView fx:id="table" layoutX="22.0" layoutY="68.0" prefHeight="239.0" prefWidth="817.0">
               <columns>
                 <TableColumn fx:id="col_name" prefWidth="88.0" text="Name" />
                 <TableColumn fx:id="col_surname" prefWidth="75.0" text="Surname" />
                   <TableColumn fx:id="col_room" prefWidth="78.0" text="Room" />
+                  <TableColumn fx:id="col_beds" prefWidth="75.0" text="Beds" />
                   <TableColumn fx:id="col_checkin" prefWidth="108.0" text="Check In" />
                   <TableColumn fx:id="col_checkout" prefWidth="104.0" text="Check out" />
-                  <TableColumn fx:id="col_reservationNumber" prefWidth="127.0" text="Reservation number" />
+                  <TableColumn fx:id="col_daysOfStay" prefWidth="86.0" text="Days of Stay" />
+                  <TableColumn fx:id="col_cost" prefWidth="64.0" text="Cost" />
+                  <TableColumn fx:id="col_reservationNumber" prefWidth="138.0" text="Reservation number" />
               </columns>
             </TableView>
             <MenuBar layoutX="1.0" layoutY="1.0" prefHeight="25.0" prefWidth="855.0">

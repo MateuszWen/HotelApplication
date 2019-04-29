@@ -3,10 +3,6 @@ package sample;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Reservation {
 
     private  SimpleIntegerProperty room;
@@ -34,12 +30,6 @@ public class Reservation {
         this.checkOutDate = new SimpleStringProperty(checkOutDate);
         this.reservationNumber = new SimpleIntegerProperty(reservationNumber);
     }
-
-    //        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy"); //formater is necessary to format from String to Date, bacause Java can't take Date format in constructor - in this case, only String
-//        try {
-//            Date checkInDate = formatter.parse(checkInDateString);
-//            Date checkOutDate = formatter.parse(checkOutDateString);
-//        } catch (ParseException e) {e.printStackTrace();}
 
 
     public int getRoom() {

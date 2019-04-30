@@ -1,36 +1,28 @@
 package sample;
 
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.io.*;
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
 
 public class AddingGuests {
 
     public static ObservableList<Reservation> functionAddingGuests(){
 
-
         ObservableList<Reservation> list = FXCollections.observableArrayList();
             for(int i = 0; i<=250; i++) {
                 list.add(new ReservationV2(getRoomNumber(), getNameAdding(), getSurnameAdding(), getCheckInDate(), getCheckOutDate(), getReservationNumber(), getNumberOfBeds()));
             }
-
-
         return list;
-
     }
 
-
+    //functions to fill up a guests table
     public static String getNameAdding() {
         Random rand = new Random();
         int number = rand.nextInt(2) + 1;
@@ -68,7 +60,7 @@ public class AddingGuests {
 
     public static String getSurnameAdding() {
         Random rand = new Random();
-        int draw = rand.nextInt(50) + 1;
+        int draw = rand.nextInt(143) + 1;
         String surname = null;
 
         File file = new File("last.txt");
@@ -87,17 +79,6 @@ public class AddingGuests {
         Random rand = new Random();
         return rand.nextInt(998) + 1;
     }
-
-
-//    public static SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy");
-//    public static Date dateHelp;
-//    {
-//        try {
-//            dateHelp = sdf.parse("01-01-2017");
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-//    }
 
     public static String getCheckInDate(){
         Random rand = new Random();
@@ -129,7 +110,7 @@ public class AddingGuests {
 
     }
 
-    public static String dateHelp ;
+    public static String dateHelp ; // <-- helping variable
 
     public static String getCheckOutDate(){
         Random rand = new Random();
@@ -157,6 +138,16 @@ public class AddingGuests {
       int reservationNumber = rand.nextInt(5000) + 1000;
       return reservationNumber;
     };
+
+    //function to check parameters
+    public static boolean isParsable(String text){
+        try{
+            Integer.parseInt(text);
+            return true;
+        }catch(NumberFormatException e ){
+            return false;
+        }
+    }
 
 
 

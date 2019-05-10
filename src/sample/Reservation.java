@@ -2,6 +2,7 @@ package sample;
 
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
+import javafx.scene.control.TextField;
 
 public class Reservation {
 
@@ -48,12 +49,12 @@ public class Reservation {
         return guestName.get();
     }
 
-    public SimpleStringProperty guestNameProperty() {
-        return guestName;
-    }
-
     public void setGuestName(String guestName) {
         this.guestName.set(guestName);
+    }
+
+    public SimpleStringProperty guestNameProperty() {
+        return guestName;
     }
 
     public String getGuestSurname() {

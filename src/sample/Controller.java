@@ -21,30 +21,30 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
-    @FXML private TableView<Reservation> table;
-    @FXML private TableColumn <Reservation, String> col_name;
-    @FXML private TableColumn <Reservation, String> col_surname;
-    @FXML private TableColumn <Reservation, Integer> col_room;
+    @FXML private TableView<ReservationV2> table;
+    @FXML private TableColumn <ReservationV2, String> col_name;
+    @FXML private TableColumn <ReservationV2, String> col_surname;
+    @FXML private TableColumn <ReservationV2, Integer> col_room;
     @FXML private TableColumn <ReservationV2, Integer> col_beds;
-    @FXML private TableColumn <Reservation, String> col_checkin;
-    @FXML private TableColumn <Reservation, String> col_checkout;
+    @FXML private TableColumn <ReservationV2, String> col_checkin;
+    @FXML private TableColumn <ReservationV2, String> col_checkout;
     @FXML private TableColumn <ReservationV2, Integer> col_daysOfStay;
     @FXML private TableColumn <ReservationV2, Double> col_cost;
-    @FXML private TableColumn <Reservation, Integer> col_reservationNumber;
+    @FXML private TableColumn <ReservationV2, Integer> col_reservationNumber;
 
-    public static ObservableList<Reservation> reservations_list =  AddingGuests.functionAddingGuests();
+    public static ObservableList<ReservationV2> reservations_list =  AddingGuests.functionAddingGuests();
 
     @Override
     public void initialize(URL location, ResourceBundle resources){
-        col_name.setCellValueFactory(new PropertyValueFactory<Reservation, String>("guestName"));
-        col_surname.setCellValueFactory(new PropertyValueFactory<Reservation, String>("guestSurname"));
-        col_room.setCellValueFactory(new PropertyValueFactory<Reservation, Integer>("room"));
+        col_name.setCellValueFactory(new PropertyValueFactory<ReservationV2, String>("guestName"));
+        col_surname.setCellValueFactory(new PropertyValueFactory<ReservationV2, String>("guestSurname"));
+        col_room.setCellValueFactory(new PropertyValueFactory<ReservationV2, Integer>("room"));
         col_beds.setCellValueFactory(new PropertyValueFactory<ReservationV2, Integer>("beds"));
-        col_checkin.setCellValueFactory(new PropertyValueFactory<Reservation, String>("checkInDate"));
-        col_checkout.setCellValueFactory(new PropertyValueFactory<Reservation, String>("checkOutDate"));
+        col_checkin.setCellValueFactory(new PropertyValueFactory<ReservationV2, String>("checkInDate"));
+        col_checkout.setCellValueFactory(new PropertyValueFactory<ReservationV2, String>("checkOutDate"));
         col_daysOfStay.setCellValueFactory(new PropertyValueFactory<ReservationV2, Integer>("daysOfStay"));
         col_cost.setCellValueFactory(new PropertyValueFactory<ReservationV2, Double>("cost"));
-        col_reservationNumber.setCellValueFactory(new PropertyValueFactory<Reservation, Integer>("reservationNumber"));
+        col_reservationNumber.setCellValueFactory(new PropertyValueFactory<ReservationV2, Integer>("reservationNumber"));
         table.setItems(reservations_list);
 
     }
@@ -70,10 +70,26 @@ public class Controller implements Initializable {
 
         Optional<ButtonType> result = alert.showAndWait();
         if (result.get() == ButtonType.OK){
-            table.getItems().remove(reservation);        } else {
+            table.getItems().remove(reservation);
+        } else {
             //do nothink
         }
     }
+
+    public static ReservationV2 reservation;
+    public static Stage stageEdit = new Stage(); // static declaration to make stageEdit.close() possible <-- in EditWindow
+    public void buttonEdit(ActionEvent event) throws IOException {
+        reservation = table.getSelectionModel().getSelectedItem();
+
+        //EditWindow editedWindow = new EditWindow();
+
+        Parent root = FXMLLoader.load(getClass().getResource("EditWindow.fxml"));
+        stageEdit.setTitle("Edit Reservation");
+        stageEdit.setScene(new Scene(root, 1100, 200));
+        stageEdit.show();
+
+    }
+
 
 
 

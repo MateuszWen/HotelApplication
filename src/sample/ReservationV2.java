@@ -39,6 +39,8 @@ public class ReservationV2 extends Reservation{
             } catch (ParseException e) {e.printStackTrace();}
     }
 
+
+
     public int getBeds() {
         return beds.get();
     }
@@ -74,4 +76,7 @@ public class ReservationV2 extends Reservation{
     public void setCost(double cost) {
         this.cost.set(cost);
     }
+
+
+
 }

@@ -13,9 +13,9 @@ import java.util.Scanner;
 
 public class AddingGuests {
 
-    public static ObservableList<Reservation> functionAddingGuests(){
+    public static ObservableList<ReservationV2> functionAddingGuests(){
 
-        ObservableList<Reservation> list = FXCollections.observableArrayList();
+        ObservableList<ReservationV2> list = FXCollections.observableArrayList();
             for(int i = 0; i<=250; i++) {
                 list.add(new ReservationV2(getRoomNumber(), getNameAdding(), getSurnameAdding(), getCheckInDate(), getCheckOutDate(), getReservationNumber(), getNumberOfBeds()));
             }

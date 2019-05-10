@@ -55,6 +55,7 @@
               </menus>
             </MenuBar>
             <Button fx:id="button_add" contentDisplay="CENTER" layoutX="872.0" layoutY="62.0" mnemonicParsing="false" onAction="#button_addClicked" prefHeight="45.0" prefWidth="85.0" text="Add +" />
+            <Button layoutX="872.0" layoutY="131.0" mnemonicParsing="false" onAction="#buttonRemove" prefHeight="45.0" prefWidth="85.0" text="Remove -" />
          </children></Pane>
    </children>
 </GridPane>

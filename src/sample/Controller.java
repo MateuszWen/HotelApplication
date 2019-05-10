@@ -7,14 +7,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
@@ -49,17 +51,32 @@ public class Controller implements Initializable {
 
 
     public void button_addClicked(ActionEvent actionEvent) throws IOException {
-//        Parent root = null;
-//        try {                                                                               //    <-- this lines open a new addWindow
-        Parent root = FXMLLoader.load(getClass().getResource("AddWindow.fxml"));        //
-//        } catch (IOException e) {                                                           //
-//            e.printStackTrace();                                                            //
-//        }                                                                                   //
-        Stage stage = new Stage();                                                       //
-        stage.setTitle("Add Reservation");                                             //
-        stage.setScene(new Scene(root, 1000, 200));                        //
-        stage.show();                                                                    //
+
+        Parent root = FXMLLoader.load(getClass().getResource("AddWindow.fxml"));
+        Stage stage = new Stage();
+        stage.setTitle("Add Reservation");
+        stage.setScene(new Scene(root, 1000, 200));
+        stage.show();
 
         }
+
+    public void buttonRemove(ActionEvent event){
+        Reservation reservation = table.getSelectionModel().getSelectedItem();
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Attention!");
+        alert.setHeaderText("You just want to delete the reservation.");
+        alert.setContentText("Are you sure?");
+
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.get() == ButtonType.OK){
+            table.getItems().remove(reservation);        } else {
+            //do nothink
+        }
+    }
+
+
+
+
 
 }
